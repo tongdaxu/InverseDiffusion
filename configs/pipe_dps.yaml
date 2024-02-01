@@ -1,0 +1,28 @@
+global:
+  timesteps: 1000
+  save_dir: results/
+
+dataset:
+  functional: inversediffusion.dataset.dataset.ImageDataset
+  args: null
+  kwargs:
+    root: val_256x256
+
+model:
+  functional: diffusers.UNet2DModel.from_pretrained
+  args:
+    - xutongda/adm_imagenet_256x256_unconditional_2
+  kwargs: null
+
+scheduler:
+  functional: diffusers.DDPMScheduler.from_pretrained
+  args:
+    - xutongda/adm_imagenet_256x256_unconditional_2
+  kwargs: null
+
+pipeline:
+  functional: inversediffusion.pipeline.dps.DPSPipeline
+  args: null
+  kwargs:
+    zeta: 4.0
+
