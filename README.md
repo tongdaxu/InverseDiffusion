@@ -58,5 +58,9 @@ python main.py --pipe $PIPELINE_CONFIG --op $OPERATOR_CONFIG
 
     ![](docs/imgs/input2.png)
 
+
+## Contribution
+* Submit an issue / PR. Be sure to run ruff check and format before PR.
+
 ## Reference
 * [1] Chung, H., Kim, J., McCann, M.T., Klasky, M.L., & Ye, J.C. (2022). Diffusion Posterior Sampling for General Noisy Inverse Problems. ArXiv, abs/2209.14687.

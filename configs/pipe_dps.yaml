@@ -11,13 +11,13 @@ dataset:
 model:
   functional: diffusers.UNet2DModel.from_pretrained
   args:
-    - xutongda/adm_imagenet_256x256_unconditional_2
+    - xutongda/adm_imagenet_256x256_unconditional
   kwargs: null
 
 scheduler:
   functional: diffusers.DDPMScheduler.from_pretrained
   args:
-    - xutongda/adm_imagenet_256x256_unconditional_2
+    - xutongda/adm_imagenet_256x256_unconditional
   kwargs: null
 
 pipeline:
